@@ -1,7 +1,7 @@
 .app-shell {
   min-height: 100vh;
-  background: var(--bg);
-  color: var(--text);
+  background: radial-gradient(circle at top left, #7c3aed 0%, #2563eb 40%, #ec4899 100%);
+  color: #f8fafc;
 }
 
 .app-header {
@@ -11,29 +11,34 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
+  background: rgba(15, 23, 42, 0.24);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 2rem;
+  backdrop-filter: blur(16px);
 }
 
 .eyebrow {
   margin: 0;
   font-size: 0.95rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #6b7280;
+  color: #facc15;
 }
 
 h1 {
   margin: 0;
-  font-size: clamp(2.25rem, 3vw, 3.25rem);
+  font-size: clamp(2.25rem, 3vw, 3.75rem);
   line-height: 1.05;
-  color: var(--text-h);
+  color: #ffffff;
+  text-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
 }
 
 .subtitle {
   margin: 0;
   max-width: 48rem;
-  line-height: 1.65;
-  color: #52525b;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.92);
 }
 
 .meta-card {
@@ -42,12 +47,12 @@ h1 {
   gap: 0.75rem;
   padding: 0.9rem 1.15rem;
   border-radius: 1.5rem;
-  border: 1px solid #e5e7eb;
-  background: #ffffff;
-  color: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
   font-size: 0.95rem;
   font-weight: 500;
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+  box-shadow: 0 14px 50px rgba(0, 0, 0, 0.18);
 }
 
 .app-grid {
@@ -68,9 +73,9 @@ h1 {
 .doc-list,
 .doc-view {
   border-radius: 2rem;
-  border: 1px solid #e5e7eb;
-  background: #ffffff;
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(15, 23, 42, 0.55);
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.25);
 }
 
 .doc-list {
@@ -81,7 +86,7 @@ h1 {
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: var(--text-h);
+  color: #fbbf24;
 }
 
 .list-group {
@@ -98,32 +103,32 @@ h1 {
   padding: 1rem 1rem;
   border-radius: 1.25rem;
   border: 1px solid transparent;
-  background: #f8fafc;
-  color: inherit;
+  background: rgba(255, 255, 255, 0.08);
+  color: #f8fafc;
   text-align: left;
   transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
 }
 
 .doc-item:hover {
-  border-color: #d1d5db;
-  background: #f1f5f9;
+  border-color: rgba(251, 191, 36, 0.6);
+  background: rgba(255, 255, 255, 0.14);
   transform: translateY(-1px);
 }
 
 .doc-item.active {
-  border-color: #c4b5fd;
-  background: #f8f4ff;
+  border-color: #f59e0b;
+  background: rgba(245, 158, 11, 0.18);
 }
 
 .doc-item-title {
   font-weight: 700;
-  color: var(--text-h);
+  color: #ffffff;
 }
 
 .doc-item-subtitle {
   margin-top: 0.35rem;
   font-size: 0.9rem;
-  color: #6b7280;
+  color: rgba(255, 255, 255, 0.72);
 }
 
 .doc-view {

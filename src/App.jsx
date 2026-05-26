@@ -45,7 +45,7 @@ function App() {
       <div className="app-header">
         <div>
           <p className="eyebrow">Navegador de Markdown</p>
-          <h1>Informe Reyjoa</h1>
+          <h1>Informe</h1>
           <p className="subtitle">Explora los archivos Markdown y visualiza su contenido de forma navegable.</p>
         </div>
         <div className="meta-card">
